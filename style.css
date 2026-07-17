@@ -23,7 +23,7 @@ main{
 
 .image-container img{
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 .left{
@@ -44,7 +44,7 @@ header{
 
 form{
   background-color: var(--form-background);
-  padding: 15%;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   gap:20px;
@@ -58,6 +58,8 @@ form{
 .title h1{
   color: var(--text-title);
   font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .form-group{
@@ -88,6 +90,10 @@ form{
   border: none;
 }
 
+.input-wrapper:focus-within{
+  border-color: var(--primary-color);
+}
+
 .form-option{
   display: flex;
   justify-content: space-between;
@@ -103,6 +109,7 @@ input[type="checkbox"] {
   width: 100%;
   padding: 4%;
   background: var(--primary-color);
+  font-weight: 600;
 }
 
 .signup-link{
@@ -114,3 +121,17 @@ a,span{
   color: var(--primary-color);
 }
 
+a{
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media(max-with:768px){
+  main{
+    grid-template-columns: 1fr;
+  }
+
+  .image-container{
+    display: none;
+  }
+}
