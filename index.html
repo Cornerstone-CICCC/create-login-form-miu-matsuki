@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <title>Document</title>
   </head>
   <body>
@@ -46,8 +51,10 @@
                   name="password"
                   id="password"
                   placeholder="Type your password"
+                  minlength="8"
+                  required
                 />
-                <button type="button" id="togglePssword">
+                <button type="button" id="togglePassword">
                   <img src="images/eye.svg" alt="" />
                 </button>
               </div>
@@ -64,7 +71,7 @@
             <button class="login-button" type="submit">LOG IN</button>
 
             <div class="signup-link">
-              <span>Don't have an account?</span><a href="#">Sign up!</a>
+              <span>Don't have an account? </span><a href="#">Sign up!</a>
             </div>
           </form>
         </div>
@@ -74,4 +81,5 @@
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
