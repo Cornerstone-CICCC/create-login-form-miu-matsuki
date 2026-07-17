@@ -1,0 +1,116 @@
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: var(--background);
+  color: var(--text-base);
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.image-container img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+}
+header{
+  padding: 40px;
+}
+
+/* login-------- */
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+form{
+  background-color: var(--form-background);
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  width: 400px;
+}
+
+.title{
+  display: flex;
+}
+
+.title h1{
+  color: var(--text-title);
+  font-family: "Poppins", sans-serif;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+  border: 1px solid var(--text-base);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.input-wrapper input{
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-base);
+}
+
+.input-wrapper button{
+  background:transparent;
+  border: none;
+}
+
+.form-option{
+  display: flex;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
+.login-button{
+  width: 100%;
+  padding: 4%;
+  background: var(--primary-color);
+}
+
+.signup-link{
+  text-align: center;
+}
+
+a,span{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
