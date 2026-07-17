@@ -8,62 +8,63 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <img src="images/logo.svg" alt="camp-in-logo" />
-    </header>
-
     <main>
-      <div class="login-container">
-        <form action="" method="post">
-          <div class="login-header">
-            <img src="images/log-in.svg" alt="" />
-            <h1>Login</h1>
-          </div>
-          <p>Insert your information below.</p>
-
-          <!-- have to add icon -->
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <div class="input-wrapper">
-              <img src="images/mail.svg" alt="" />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Type your email"
-              />
+      <div class="left">
+        <header>
+          <img src="images/logo.svg" alt="camp-in-logo" />
+        </header>
+        <div class="login-container">
+          <form action="" method="post">
+            <div class="login-header">
+              <img src="images/log-in.svg" alt="" />
+              <h1>Login</h1>
             </div>
-          </div>
-          <!-- have to add icon -->
-          <div class="form-group">
-            <label for="password">Password</label>
-            <div class="input-wrapper">
-              <img src="images/lock.svg" alt="" />
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Type your password"
-              />
+            <p>Insert your information below.</p>
+
+            <!-- have to add icon -->
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <div class="input-wrapper">
+                <img src="images/mail.svg" alt="" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Type your email"
+                />
+              </div>
             </div>
-          </div>
-
-          <div class="form-option">
-            <div class="remember-me">
-              <input type="checkbox" name="remindMe" id="remindMe" />
-              <label for="remindMe">Remind me</label>
+            <!-- have to add icon -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-wrapper">
+                <img src="images/lock.svg" alt="" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Type your password"
+                />
+              </div>
             </div>
-            <a href="#">Forgot my password</a>
-          </div>
 
-          <button type="submit">LOG IN</button>
+            <div class="form-option">
+              <div class="remember-me">
+                <input type="checkbox" name="remindMe" id="remindMe" />
+                <label for="remindMe">Remind me</label>
+              </div>
+              <a href="#">Forgot my password</a>
+            </div>
 
-          <div class="signup-link">
-            <span>Don't have an account?</span><a href="#">Sign up!</a>
-          </div>
-        </form>
+            <button type="submit">LOG IN</button>
+
+            <div class="signup-link">
+              <span>Don't have an account?</span><a href="#">Sign up!</a>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="image-container">
+      <div class="image-container right">
         <img src="images/side-image-2x.jpg" alt="camp-image" />
       </div>
     </main>
